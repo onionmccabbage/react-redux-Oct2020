@@ -27,7 +27,7 @@ const rootReducer = (state=initialState, action)=>{
 const store = createStore(rootReducer)
 
 // action creators (just functions)
-const buttonClickAction = (payload={})=>{ // receive an incoming payload
+const buttonClickAction = (payload={})=>{ // receive an incoming payload, in this case default to an empty object
     return {type:BUTTON_CLICKED, payload} // optionally pass a payload
 }
 const sectionVisibleAction = ()=>{
