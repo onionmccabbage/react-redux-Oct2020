@@ -8,7 +8,7 @@ const initialState = {
     {id:1, title:'Redux'}, 
     {id:2, title:'React-Redux'}
   ],
-  title:'initial value' // a simple string
+  title:'initial value' // a simple string with a default starting value
 }
 
 function reducer(state = initialState, action) {
