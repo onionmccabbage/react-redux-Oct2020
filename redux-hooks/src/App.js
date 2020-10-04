@@ -13,50 +13,29 @@ function App() {
   const counter = useSelector(state => state); // we could change 'counter' to 'state' i.e. local state
   const dispatch = useDispatch();
   return (
-    <div className="App">
+    <article className="App">
       <h2>Simple Example</h2>
       <p>Value of msg: {counter.msg}</p>
       <h3>{counter.num}</h3>
-      <button
-        onClick={() =>
-          dispatch({
-            type: "INCREMENT",
-            step: 1
-          })
-        }
-      >
+      <button onClick={ () => dispatch({ type: "INCREMENT", step: 1 }) }>
         Increment
       </button>
-      <button
-        onClick={() =>
-          dispatch({
-            type: "DECREMENT",
-            step: 1
-          })
-        }
-      >
+      <button onClick={() => dispatch({ type: "DECREMENT", step: 1 }) }>
         Decrement
       </button>
-      <button
-        onClick={() =>
-          dispatch({
-            type: "RESET",
-            step: 1 // Hmmm
-          })
-        }
-      >
+      <button onClick={() => dispatch({ type: "RESET"  }) }>
         Reset
       </button>
-      <hr/>
+      <hr />
       <List />
-      <hr/>
+      <hr />
       <Form />
-      <hr/>
+      <hr />
       <p>Title: {counter.title}</p>
-      <hr/>
+      <hr />
       <Counter />
-    </div>
-  );
+    </article>
+  )
 }
 
 export default App;
