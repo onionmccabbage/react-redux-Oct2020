@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+// THIS COMPONENT IS NEVER USED IGNORE IT - see App.js in js/components
+ folder
 class App extends Component {
   render() {
     return (

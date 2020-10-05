@@ -1,7 +1,7 @@
 import React from "react";
 import List from "./List";
 import Form from "./Form";
-
+// from https://www.valentinog.com/blog/redux/
 const App = () => (
     <>
         <div>
