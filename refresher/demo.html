@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        x=y=z=42
+        const doStuff=()=>{
+            var x = 1 // local
+            let y = 1 // local
+            z = 1 // global
+        }
+    
+        doStuff()
+        console.log(x, y, z) // 42, 42, 1
+    
+        // mutable state
+        let state_m = {id:1, wibble:'oogleboogle', list:[9,8,7,6,5]}
+        state_m.list[2] = 77
+    
+        // immutable state
+        const state_i1 = {id:1, wibble:'oogleboogle', list:[9,8,7,6,5]}
+        const state_i2 = {id:1, wibble:'oogleboogle', list:[9,8,77,6,5]}
+    
+        // keeping time-stravel states
+        let state_array = []
+        state_array[0] = {id:1, wibble:'oogleboogle', list:[9,8,7,6,5]}
+        state_array[1] = {id:1, wibble:'oogleboogle', list:[9,8,77,6,5]}
+        
+        // ways to write functions
+        const fnA = (x)=>{return x*x}
+        const fnB = x=>{return x*x} // only one incoming param
+        const fnC = x=> x*x // only one return statement
+
+    </script>    
+</body>
+</html>
