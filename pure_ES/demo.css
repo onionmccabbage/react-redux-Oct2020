@@ -1,0 +1,9 @@
+/* tag styles */
+body {color:#003366;}
+
+/* class styles */
+li.fancy {font-style: italic;}
+
+/* inheritance styles */
+ul li {color:#663300;}
+ul>li {color:#336600;}
