@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import './List.css'
+import './List.css'
 
 // here we use our state to grab the members we need, in this case, articles
 const mapStateToProps = (state) => { // some conventions call it 'select'
@@ -10,7 +10,8 @@ const mapStateToProps = (state) => { // some conventions call it 'select'
 // declare our functional component
 // by convention, use 'Connected' in its name
 const ConnectedList = ({ articles }) => ( // or {return (...)}
-    <section>
+    <section className='List'>
+        <h4>List Using Connect</h4>
         <ul>
             {/* iterate over our articles */}
             {articles.map(el => (<li key={el.id}>{el.title}</li>))}
@@ -19,6 +20,6 @@ const ConnectedList = ({ articles }) => ( // or {return (...)}
 )
 
 // we connect our component
-const List = connect(mapStateToProps)(ConnectedList)
+const ListUsingConnect = connect(mapStateToProps)(ConnectedList)
 
-export default List
+export default ListUsingConnect

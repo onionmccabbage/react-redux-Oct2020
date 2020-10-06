@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Customer Update component renders as expected 1`] = `
+<form
+  className="customerMaintenance"
+  onSubmit={[Function]}
+>
+  <label
+    for="firstName"
+  >
+    First Name
+  </label>
+  <input
+    id="firstName"
+    name="firstName"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value="John"
+  />
+  <label
+    for="lastName"
+  >
+    Last Name
+  </label>
+  <input
+    id="lastName"
+    name="lastName"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value="Wick"
+  />
+  <label
+    for="emailAddress"
+  >
+    Email Address
+  </label>
+  <input
+    id="emailAddress"
+    name="emailAddress"
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value="john.wick@continental.com"
+  />
+  <button
+    className="button"
+  >
+    UpdateCustomer
+  </button>
+</form>
+`;
+
+exports[`The ProductImage component renders as expected 1`] = `
+<form
+  className="customerMaintenance"
+  onSubmit={[Function]}
+>
+  <label
+    for="firstName"
+  >
+    First Name
+  </label>
+  <input
+    id="firstName"
+    name="firstName"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value="John"
+  />
+  <label
+    for="lastName"
+  >
+    Last Name
+  </label>
+  <input
+    id="lastName"
+    name="lastName"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value="Wick"
+  />
+  <label
+    for="emailAddress"
+  >
+    Email Address
+  </label>
+  <input
+    id="emailAddress"
+    name="emailAddress"
+    onChange={[Function]}
+    required={true}
+    type="email"
+    value="john.wick@continental.com"
+  />
+  <button
+    className="button"
+  >
+    UpdateCustomer
+  </button>
+</form>
+`;

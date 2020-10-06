@@ -1,5 +1,3 @@
-const { combineReducers } = require("redux")
-
 // this is where ALL our stateful model data lives - the single source of truth
 const initialState = {
     num: 0,
@@ -22,6 +20,7 @@ const reducer = (state = initialState, action) => {
             return {...state, title:action.value}
         case 'ADD_ARTICLE':
             // we use concat so we output a NEW array , rather than change existing array
+            console.log(`action: ${action}`)
             return {...state, articles: state.articles.concat(action.article)}
         default:
             return state

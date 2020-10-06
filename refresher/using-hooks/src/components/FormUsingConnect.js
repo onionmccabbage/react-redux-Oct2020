@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import './Form.css'
+import './Form.css'
 
 // functional component
 const ConnectedForm = ( {title, dispatch} )=>{
@@ -16,8 +16,8 @@ const ConnectedForm = ( {title, dispatch} )=>{
         addArticle()
     }
     return (
-        <section>
-            {/* ooooh do we really want a form???? */}
+        <section className='Form'>
+            <h4>Form Using Connect</h4>
             <form>
                 <label htmlFor='title'>Title</label>
                 {/* this is a controlled component */}
@@ -33,9 +33,9 @@ const ConnectedForm = ( {title, dispatch} )=>{
     )
 }
 // we need to map the state to the props of this component
-const mapStateToProps = state => ({title:state.title, getRemoteData:getData})
-const Form = connect(
+const mapStateToProps = state => ({title:state.title}) // , getRemoteData:getData
+const FormUsingConnect = connect(
     mapStateToProps, // for state
     null // for dispatch
 )(ConnectedForm)
-export default Form
+export default FormUsingConnect

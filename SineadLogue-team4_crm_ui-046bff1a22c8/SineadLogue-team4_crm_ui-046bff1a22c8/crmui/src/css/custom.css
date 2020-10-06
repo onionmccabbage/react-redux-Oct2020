@@ -1,0 +1,14 @@
+/*change the colour of the navbar hover */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: red;
+    color:blue;
+}
+
+.nav-item a:focus {
+    background-color: #45bce5;
+}
+.pageTitle{
+    font-weight: bold;
+    font-size: 30px;
+    color:#0033a0;
+}
