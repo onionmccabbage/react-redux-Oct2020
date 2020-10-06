@@ -33,7 +33,7 @@ const ConnectedForm = ( {title, dispatch} )=>{
     )
 }
 // we need to map the state to the props of this component
-const mapStateToProps = state => ({title:state.title})
+const mapStateToProps = state => ({title:state.title, getRemoteData:getData})
 const Form = connect(
     mapStateToProps, // for state
     null // for dispatch

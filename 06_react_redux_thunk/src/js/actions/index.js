@@ -6,6 +6,7 @@ export function addArticle(payload) {
 
 export function getData() {
   return function(dispatch) {
+    // fetch and axios are PROMISE DRIVEN
     return fetch("https://jsonplaceholder.typicode.com/posts")
       .then(response => response.json())
       .then(json => {

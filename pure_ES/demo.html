@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel='stylesheet' type='text/css' href='demo.css' />
 </head>
+
 <body>
     <h2>Pure ECMAScript Examples (with some CSS too)</h2>
     <h3>See the console to explore ECMAScript codesamples</h3>
@@ -15,9 +17,11 @@
         <li class='fancy'>li.fancy applies style to li tags with a class called 'fancy'</li>
     </ol>
     <ul>
-        <li>ul is for unordered lists</li>
-        <li>Each member of a list is bulleted</li>
-        <li>Lists can contain lists</li>
+        
+            <li>ul is for unordered lists</li>
+            <li>Each member of a list is bulleted</li>
+            <li>Lists can contain lists</li>
+        
         <ol>
             <li>Ordered lists are indexed</li>
             <li>This ordered list is inside an unodered list</li>
@@ -26,8 +30,8 @@
     </ul>
 </body>
 <script>
-    x=y=z=42
-    const doStuff=()=>{
+    x = y = z = 42
+    const doStuff = () => {
         var x = 1 // local
         let y = 1 // local
         z = 1 // global
@@ -37,17 +41,18 @@
     console.log(x, y, z) // 42, 42, 1
 
     // mutable state
-    let state_m = {id:1, wibble:'oogleboogle', list:[9,8,7,6,5]}
+    let state_m = { id: 1, wibble: 'oogleboogle', list: [9, 8, 7, 6, 5] }
     state_m.list[2] = 77
 
     // immutable state
-    const state_i1 = {id:1, wibble:'oogleboogle', list:[9,8,7,6,5]}
-    const state_i2 = {id:1, wibble:'oogleboogle', list:[9,8,77,6,5]}
+    const state_i1 = { id: 1, wibble: 'oogleboogle', list: [9, 8, 7, 6, 5] }
+    const state_i2 = { id: 1, wibble: 'oogleboogle', list: [9, 8, 77, 6, 5] }
 
     // keeping time-stravel states
     let state_array = []
-    state_array[0] = {id:1, wibble:'oogleboogle', list:[9,8,7,6,5]}
-    state_array[1] = {id:1, wibble:'oogleboogle', list:[9,8,77,6,5]}
-    
+    state_array[0] = { id: 1, wibble: 'oogleboogle', list: [9, 8, 7, 6, 5] }
+    state_array[1] = { id: 1, wibble: 'oogleboogle', list: [9, 8, 77, 6, 5] }
+
 </script>
+
 </html>
